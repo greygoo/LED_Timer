@@ -12,6 +12,7 @@ LED_Timer::LED_Timer(int pin, long on)
 void LED_Timer::Enable()
 {
   enabled = 1;
+  pinMode(ledPin, OUTPUT); 
   digitalWrite(ledPin, HIGH);
 }
 
